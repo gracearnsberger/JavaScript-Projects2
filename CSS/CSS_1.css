@@ -1,0 +1,25 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #DDA0DD;
+    outline: none;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+h2 {
+    color: hotpink;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+
+label {
+    color: lightgreen;
+    font-weight: bolder;
+    font-size: large;
+}
