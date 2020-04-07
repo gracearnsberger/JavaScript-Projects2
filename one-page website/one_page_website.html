@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+<link rel="stylesheet" href="css/one_page_website.css" type="text/css"/>
+<title>Raccoons</title>
+<meta charset="utf-8">
+</header>
+<body>
+
+<!-- NAV -->
+<div>
+	<div>
+		<ul>
+			<a href="#home" id="link"><li>HOME</li></a>
+			<a href="#gallery" id="gallery"><li>GALLERY</li></a>
+			<a href="#contact" id="rsvp"><li>CONTACT</li></a>
+		</ul>
+	</div>
+</div>
+<!-- END NAV -->
+
+<!-- HOME -->
+<div id="home">
+	<div>
+	<h3> Raccoons </h3>
+		<div>
+			<p>Raccoons are very cute but also very fiesty</p>
+		</div>
+	</div>
+</div>
+<!-- END HOME -->
+
+<!-- GALLERY -->
+<section>
+	<div id="gallery">
+		<h1>Gallery</h1>
+		<div>
+		
+			<!-- PHOTO-SECTION -->
+	<div class="row">
+  		<div class="column">
+   		<img src="raccoon1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+  		</div>
+  		<div class="column">
+    	<img src="raccoon2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+  		</div>
+  		<div class="column">
+    	<img src="raccoon3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+  		</div>
+  		<div class="column">
+    	<img src="raccoon4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+  		</div>
+	</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 4</div>
+      <img src="raccoon1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 4</div>
+      <img src="raccoon2.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 4</div>
+      <img src="raccoon3.jpg" style="width:100%">
+    </div>
+    
+    <div class="mySlides">
+      <div class="numbertext">4 / 4</div>
+      <img src="raccoon4.jpg" style="width:100%">
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+    <div class="column">
+      <img class="demo cursor" src="raccoon1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Raccoons">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="raccoon2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Raccoons">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="raccoon3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Raccoons">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="raccoon4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Raccoons">
+    </div>
+  </div>
+</div>
+
+			<!-- END PHOTO-SECTION  -->
+			
+			<!-- VIDEO-SECTION -->
+			<div class="video-section">
+				<div class="video">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SLPploAuFVY?start=5" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						<p>Check out this cute raccoon video!</p>
+					</div>
+				</div>
+			</div>
+			<!-- END VIDEO-SECTION-->
+		</div>
+	</div>
+</section>
+<!-- END GALLERY -->
+
+<!--CONTACT-->
+<section>
+	<div id="contact">
+		<div>
+			<h1>Reservations</h1>
+			<div>
+				<h2><span>Come meet a raccoon today!!</span>
+				<br/>Contact us to find a raccoon shelter near you!</h2>
+				<p>
+					Please provide your basic contact information.
+				</p>
+				<div>
+					<form action="" method="post">
+						<input class="rsvp" type="text" value="First Name">
+						<input class="rsvp" type="text" value="Last Name">
+						<input class="rsvp" type="text" value="Email Address">
+						<input class="rsvp" type="text" value="Phone Number">
+						<div class="form-spacer">
+							<label class="terms">Terms and Conditions</label>
+						</div>
+						<div>
+							<input type="submit" value="Submit">
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- END CONTACT -->
+
+<!-- FOOTER -->
+<div>
+www.raccoons.animalhistory &nbsp;|&nbsp; &copy; 2020
+</div>
+<!-- END FOOTER -->
+
+</body>
+</html>
